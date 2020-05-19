@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="immortal.css">
+    <meta charset="utf-8">
+    <title>Register</title>
+    <script type="text/javascript" src="immortal.js"></script>
+</head>
+
+<style>
+.bg{
+background-image: url(images/background.jpg);
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+
+<body>
+
+<header>
+    <h1><a href="/index.html" class="storeName">Immortal Cars</a></h1>
+    <strong >the cars of your dreams</strong>
+</header>
+<nav>
+    <a href="/hotdeal.html">Hot Deal</a> |
+    <a href="/about.html">About Us</a> |
+    <a href="/contact.html">Contact Us</a> |
+    <a href="/products.html">Products</a> |
+    <a href="/signin.html">Sign in</a> |
+    <a href="/register.html">Register</a> |
+   
+
+
+</nav>
+
+<div class="bg">
+<div class="container centered">
+    <div class="backgroundContainer">
+    <form name="user" action="registerfunc.php" method="post">
+        <div class="row">
+            <h2 class="centered">Register</h2>
+
+            <div class="loginInfo">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="password2" placeholder="Re-enter the Password" required>
+            </div>
+            <div class="loginButton centered">
+                <input type="submit" value="Login" onclick="checkSignUpInput(document.user.username,document.user.password,document.user.password2)">
+            </div>
+
+        </div>
+    </form>
+</div>
+</div>
+</div>
+
+<div class="bottom-container">
+
+</body>
+</html>

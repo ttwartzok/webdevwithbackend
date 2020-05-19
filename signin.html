@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/immortal.css">
+    <meta charset="utf-8">
+    <title>Sign In</title>
+    <script type="text/javascript" src="/immortal.js"></script>
+</head>
+
+<style>
+.bg{
+background-image: url(images/background.jpg);
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+
+<body>
+
+<header>
+    <h1><a href="/index.php" class="storeName">Immortal Cars</a></h1>
+    <strong>the cars of your dreams</strong>
+</header>
+
+<nav>
+    <a href="/products.html">Products</a> |
+    <a href="/about.html">About Us</a> |
+    <a href="/contact.html">Contact Us</a> |
+    <a href="#" onclick="randomLink();">Surprise Me</a> |
+    
+
+
+</nav>
+
+<div class="bg">
+<div class="container centered">
+    <div class="backgroundContainer">
+    <form name="user" action="authenticate.php" method="post">
+        <div class="row">
+            <h2 class="centered">Login</h2>
+
+            <div class="loginInfo">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <p id="newCard"></p>
+            </div>
+            <div class="loginButton centered">
+                <input type="submit" value="login"
+                        onclick="checkLoginInput(document.user.password,document.user.username)">
+            </div>
+    <div>
+        <p>
+            <a href="#" class="otherlink" style="color: white">Forgot password?</a>
+        </p>
+        <p>
+            <a href="register.html" class="otherlink" style="color: white">Sign up</a>
+        </p>
+    </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+
+</Body>
+
